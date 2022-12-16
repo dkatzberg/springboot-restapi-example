@@ -1,10 +1,10 @@
-package de.agb.fia001;
+package de.agb.fia;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Fia001ApplicationTests {
+class FiaApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -13,13 +13,14 @@ import de.agb.fia.database.DatabaseHandler;
 import de.agb.fia.database.model.Personal;
 
 /**
- * The basic controller, which works as a demo version of an RestController.
+ * The basic rest controller, which works as a demo version of an
+ * RestController.
  * 
  * @author Daniel Katzberg
  *
  */
 @RestController
-public class Fia001BasicController {
+public class FiaBasicController {
 
 	@Autowired
 	private DatabaseHandler databaseHandler;
@@ -28,18 +29,18 @@ public class Fia001BasicController {
 	 * 
 	 * @return A String as a "hi".
 	 */
-	@GetMapping("/halloFia001")
-	public String getFia001() {
-		return "Hallo FIA 001";
+	@GetMapping("/halloFia")
+	public String getGreeting() {
+		return "Hi FIA";
 	}
 
 	/**
 	 * 
 	 * @return A String as a "bye".
 	 */
-	@GetMapping("/bisbald")
+	@GetMapping("/bye")
 	public String getBisbald() {
-		return "Bis bald.";
+		return "Bye.";
 	}
 
 	/**
@@ -60,7 +61,9 @@ public class Fia001BasicController {
 	}
 
 	// Curl Befehl:
-	// curl -X PUT localhost:8080/personal/update -H 'Content-type:application/json' -d '{"id": "4", "vorname": "Niko", "nachname": "Musterfrau", "klasse": "fia001"}'
+	// curl -X PUT localhost:8080/personal/update -H 'Content-type:application/json'
+	// -d '{"id": "4", "vorname": "Niko", "nachname": "Musterfrau", "klasse":
+	// "fia001"}'
 	@PutMapping("/personal/update")
 	public void updateEmployee(@RequestBody Personal neuesPersonal) {
 		this.databaseHandler.updatePersonal(neuesPersonal);

@@ -15,10 +15,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  */
 @Configuration
 public class MySqlConfiguration {
-	
+
 	/**
 	 * The Data Source Object for the configuration and connection to the MySQL
 	 * Database.
+	 * 
 	 * @return The generated Datasource Object.
 	 */
 	@Bean
@@ -34,11 +35,12 @@ public class MySqlConfiguration {
 
 	/**
 	 * This method generated the Jdbc Template, based on the Datasource object.
+	 * 
 	 * @return The generated Jdbc Template.
 	 */
 	@Bean
 	public JdbcTemplate getJdbcTemplate() {
-	  return new JdbcTemplate(this.mysqlDataSource());
+		return new JdbcTemplate(this.mysqlDataSource());
 	}
 
 }

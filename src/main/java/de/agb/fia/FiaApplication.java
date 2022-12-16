@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Starting point for the application.
+ * 
  * @author Daniel Katzberg
  *
  */
@@ -13,5 +14,5 @@ public class FiaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FiaApplication.class, args);
-	}	
+	}
 }
