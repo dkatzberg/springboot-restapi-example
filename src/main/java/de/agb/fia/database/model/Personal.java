@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.agb.fia001.database.model;
+package de.agb.fia.database.model;
 
 /**
  * OORM class for the table "personal" in the mysql database.

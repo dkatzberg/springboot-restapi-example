@@ -1,4 +1,4 @@
-package de.agb.fia001.controller;
+package de.agb.fia.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.agb.fia001.database.DatabaseHandler;
-import de.agb.fia001.database.model.Personal;
+import de.agb.fia.database.DatabaseHandler;
+import de.agb.fia.database.model.Personal;
 
 /**
  * The basic controller, which works as a demo version of an RestController.

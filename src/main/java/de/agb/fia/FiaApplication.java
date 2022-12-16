@@ -1,4 +1,4 @@
-package de.agb.fia001;
+package de.agb.fia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class Fia001Application {
+public class FiaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Fia001Application.class, args);
+		SpringApplication.run(FiaApplication.class, args);
 	}	
 }

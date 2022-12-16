@@ -1,4 +1,4 @@
-package de.agb.fia001;
+package de.agb.fia;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -12,7 +12,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Fia001Application.class);
+		return application.sources(FiaApplication.class);
 	}
 
 }

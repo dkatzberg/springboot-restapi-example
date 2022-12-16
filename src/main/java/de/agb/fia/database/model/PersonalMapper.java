@@ -1,4 +1,4 @@
-package de.agb.fia001.database.model;
+package de.agb.fia.database.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

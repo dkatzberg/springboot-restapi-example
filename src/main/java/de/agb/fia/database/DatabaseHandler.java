@@ -1,4 +1,4 @@
-package de.agb.fia001.database;
+package de.agb.fia.database;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import de.agb.fia001.database.model.Personal;
-import de.agb.fia001.database.model.PersonalMapper;
+import de.agb.fia.database.model.Personal;
+import de.agb.fia.database.model.PersonalMapper;
 
 /**
  * This repository class

@@ -1,4 +1,4 @@
-package de.agb.fia001.configuration;
+package de.agb.fia.configuration;
 
 import javax.sql.DataSource;
 
@@ -25,7 +25,7 @@ public class MySqlConfiguration {
 	public DataSource mysqlDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/fia001_spring");
+		dataSource.setUrl("<database_uri>");
 		dataSource.setUsername("<database_user>");
 		dataSource.setPassword("<database_password>");
 
