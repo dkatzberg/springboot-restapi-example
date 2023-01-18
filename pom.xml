@@ -4,15 +4,15 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.5</version>
+		<version>3.0.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>de.agb</groupId>
-	<artifactId>fia001</artifactId>
+	<artifactId>fia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>fia001</name>
-	<description>Fia001 Demo project for Spring Boot</description>
+	<name>fia</name>
+	<description>Fia Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
