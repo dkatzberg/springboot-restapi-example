@@ -28,6 +28,7 @@ public class DatabaseHandler {
 	 * @return A list of all personal entries of the database
 	 */
 	public List<Personal> selectAllPersonal() {
+		
 		String sqlQuery = "SELECT * FROM Personal";
 		List<Personal> personalList = jdbcTemplate.query(sqlQuery, new PersonalMapper());
 		personalList.forEach(p -> System.out.println(p.toString()));// just debugging
@@ -59,4 +60,11 @@ public class DatabaseHandler {
 				personal.getId());
 	}
 
+	protected JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	protected void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
 }
